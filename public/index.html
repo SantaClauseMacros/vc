@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Password Voice Chat</title>
+</head>
+<body>
+  <h2>Password VC</h2>
+
+  <input id="room" placeholder="Room name">
+  <input id="pass" placeholder="Password" type="password">
+
+  <br><br>
+  <button onclick="createRoom()">Create Room</button>
+  <button onclick="joinRoom()">Join Room</button>
+
+  <p id="status"></p>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
